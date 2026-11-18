@@ -1,3 +1,4 @@
+
 from contextlib import redirect_stdout
 from io import StringIO
 import unittest
@@ -8,6 +9,7 @@ from main import main
 
 
 class TestTaskManager(unittest.TestCase):
+
     def test_add_task(self):
         manager = TaskManager()
         task = manager.add_task("Complete assignment")
