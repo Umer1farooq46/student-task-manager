@@ -5,7 +5,8 @@ class TaskManager:
         self.next_id = 1
 
     def add_task(self, title):
-        if not title or not title.strip():
+        """Create a new task after validating its title."""
+        if not isinstance(title, str) or not title.strip():
             raise ValueError("Task title cannot be empty")
 
         task = {
