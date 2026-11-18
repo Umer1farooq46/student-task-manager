@@ -25,15 +25,19 @@ class TestTaskManager(unittest.TestCase):
         manager = TaskManager()
         task = manager.add_task("Study Git")
 
-        self.assertTrue(manager.complete_task(task["id"]))
+        result = manager.complete_task(task["id"])
+
+        self.assertTrue(result)
         self.assertTrue(task["completed"])
 
     def test_delete_task(self):
         manager = TaskManager()
         task = manager.add_task("Submit project")
 
-        self.assertTrue(manager.delete_task(task["id"]))
-        self.assertEqual(manager.display_tasks(), [])
+        result = manager.delete_task(task["id"])
+
+        self.assertTrue(result)
+        self.assertEqual(len(manager.display_tasks()), 0)
 
     def test_task_actions_reject_invalid_ids(self):
         manager = TaskManager()
