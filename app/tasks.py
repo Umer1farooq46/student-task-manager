@@ -5,18 +5,20 @@ class TaskManager:
         self.next_id = 1
 
     def add_task(self, title):
-        if not title or not title.strip():
-            raise ValueError("Task title cannot be empty")
+    if not title or not title.strip():
+        raise ValueError("Task title cannot be empty")
 
-        task = {
-            "id": self.next_id,
-            "title": title.strip(),
-            "completed": False
-        }
+    task = {
+        "id": self.next_id,
+        "title": title.strip(),
+        "completed": False
+    }
 
-        self.tasks.append(task)
-        self.next_id += 1
-        return task
+    self.tasks.append(task)
+    self.next_id += 1
+
+    print(f"Task '{task['title']}' added successfully!")
+    return task
 
     def display_tasks(self):
         return self.tasks
