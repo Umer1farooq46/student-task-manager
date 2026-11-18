@@ -38,11 +38,14 @@ GitHub Issues are online records for tasks, bugs, and questions. GitHub Actions 
 
 The task-completion method had an indentation error, so the module could not be imported. I corrected the indentation, added tests for task operations and invalid input, and ran the test suite successfully.
 
-## Work completed locally
+## Work completed
 
-- Fixed task completion and deletion ID validation and added six passing `unittest` cases.
+- Fixed task creation, completion, and deletion validation. The application has ten passing `unittest` cases.
 - Added the README, user guide, and Python test workflow.
-- Created two meaningful commits on `feature/complete-task` and pushed that branch.
+- Created and pushed the three required feature branches, plus separate documentation and CI branches.
+- Created five GitHub Issues and linked them to five pull requests. All five pull requests were reviewed and merged. A review comment was submitted on the task-creation pull request.
+- GitHub Actions recorded an initial failed run because the workflow branch did not yet contain the tests, followed by successful runs with the tests available. The final workflow run on `main` succeeded.
+- Published the `v1.0.0` GitHub Release.
 - Pushed the conflict exercise baseline and both conflict branches. The conflict was produced by Git during an actual merge and then resolved as described above.
 
-The pull requests, Issues, Actions runs, GitHub Release, and screenshot evidence should only be reported as completed after they are actually created, run, published, or captured on GitHub/the local machine.
+Screenshots of GitHub pages should be captured from the browser and saved separately as submission evidence.
