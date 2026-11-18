@@ -1,5 +1,7 @@
 # Student Task Manager
 
+Project status: Completed
+
 A small Python console application for managing student tasks in memory.
 
 ## Features
