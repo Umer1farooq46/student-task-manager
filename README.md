@@ -1,6 +1,6 @@
 # Student Task Manager
 
-Project status: In Progress
+Project status: Completed
 
 A simple Python console application for managing student tasks.
 
