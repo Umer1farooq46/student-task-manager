@@ -1,5 +1,7 @@
 # Student Task Manager
 
+Project status: Planning
+
 A simple Python console application for managing student tasks.
 
 ## Features
